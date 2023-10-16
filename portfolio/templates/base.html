@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    {% block head %}
+    <title>{% block title %}Home{% endblock %}</title>
+
+
+    {% endblock %}
+</head>
+<body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Por: Lucas Souza Araújo <a href="https://github.com/logosart"> github</a>.
+        {% endblock %}
+    </div>
+</body>
+</html>
