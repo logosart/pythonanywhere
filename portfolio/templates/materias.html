@@ -1,0 +1,94 @@
+{% extends "base.html"  %} {% block title %} Materias {% endblock %}
+{% block content %}
+
+<head>
+    <div class ="titulo">
+        Matérias
+    </div>
+    
+</head>
+
+
+<body>  
+
+    <div class = "blocoMaterias" >
+        <div class ="pooButton">
+            <button>PROGRAMAÇÃO ORIENTADA A OBJETO</button>
+        </div>
+        
+        <div class ="redesButton">
+            <button>REDES DE COMPUTADORES</button>
+        </div>
+    </div>
+
+</body>
+
+<style>
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Torna a página verticalmente centrada */
+}
+
+.titulo{
+    font-size: 200%;
+    position: absolute;
+    color: white;
+
+    align-items: center;
+    font-weight: bold;
+    top: 20%;
+}
+
+.blocoMaterias{
+    border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+
+    color: black;
+    position: absolute;
+    display: absolute;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    top: 30%;
+    left:40%;
+    width: 400px; /* Largura de 300 pixels */
+    height: 500px; /* Altura de 200 pixels */
+    border-radius: 15%;
+}
+
+#footer{
+    color: white;
+
+    position: absolute;
+    left:47%;
+    top: 90%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pooButton button, .redesButton button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 2%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+        .pooButton button:hover, .redesButton button:hover {
+            background-color: #2980b9;
+        }
+
+</style>
+
+
+{% endblock %}
