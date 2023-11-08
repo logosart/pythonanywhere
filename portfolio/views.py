@@ -6,3 +6,9 @@ def home(request):
 
 def materias(request):
     return render(request, "materias.html")
+
+def poo(request):
+    return render(request, "poo.html")
+
+def redes(request):
+    return render(request, "redes.html")

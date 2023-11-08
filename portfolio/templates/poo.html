@@ -1,0 +1,52 @@
+{% extends "base.html"  %} {% block title %} POO {% endblock %}
+{% block content %}
+<head>
+    <div class = "titulo">Programação orientada a objeto</div>
+    
+</head>
+
+<body>
+    <div class ="texto">
+        <p>
+            Nesse semestre o nosso principal objetivo em programação orientada a objeta era entender esse conceito.
+            A orientação a objeto
+        </p>
+    </div>
+</body>
+
+<style>
+
+    .titulo{
+    font-size: 150%;
+    position: absolute;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    top: 5%;
+    left: 40%;
+    }
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Torna a página verticalmente centrada */
+}
+    
+#footer{
+    color: white;
+    position: absolute;
+    left:45%;
+    top: 95%;
+    justify-content: center;
+    align-items: center;    
+}
+
+.texto{
+    color: white;
+}
+    
+</style>
+
+{% endblock %}
