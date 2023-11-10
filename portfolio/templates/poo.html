@@ -7,45 +7,93 @@
 
 <body>
     <div class ="texto">
+
         <p>
-            Nesse semestre o nosso principal objetivo em programação orientada a objeta era entender esse conceito.
-            A orientação a objeto
+            Sobre Conceitos básicos de orientação a objeto, aprendi que é uma técnica de programação que permite modelar objetos do mundo real em um sistema de software. A Abstração é um dos pilares da POO e é utilizada para definir entidades do mundo real. Encapsulamento é a técnica utilizada para esconder uma ideia, ou seja, não expor detalhes internos para o usuário, tornando partes do sistema mais independentes possível. Herança é um conceito que permite criar uma nova classe a partir de uma classe existente. Polimorfismo é a capacidade de um objeto poder ser referenciado de várias formas.
+        </p>
+
+        <p>
+            Sobre Orientação a objetos em java, aprendi que é uma linguagem de programação orientada a objetos. Alguns dos métodos, condições, estruturas de repetição e operadores em java que aprendi são: <destaque > if, else, switch, while, do-while, for, break, continue, return, ==, !=, >, <, >=, <=, &&, ||, +, -, *, /, %, ++, --, +=, -=, *=, /=, %=.</destaque>
+        </p>
+
+        <p>
+            Sobre criação de classes em java, aprendi que é possível criar novas classes em Java usando a palavra-chave class. Uma classe pode ter atributos (variáveis) e métodos (funções). Por exemplo, para criar uma classe Pessoa com os atributos nome e idade, pode-se usar a seguinte sintaxe:
+        </p>
+
+        <p>
+
         </p>
     </div>
 </body>
 
 <style>
 
+    img{
+        position: absolute;   
+    }
+
     .titulo{
+
     font-size: 150%;
-    position: absolute;
     color: white;
-    align-items: center;
-    font-weight: bold;
-    top: 5%;
-    left: 40%;
+    display: flex;
+
+    /*centralizar a no topo da tela */
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
     }
 
 body{
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Torna a página verticalmente centrada */
+    background-color: black;
 }
     
+destaque{
+    color: rgb(130, 130, 255);
+    font-weight: bold;
+}
+
 #footer{
     color: white;
+    
+    
+    /*centralizar a no topo da tela */
     position: absolute;
-    left:45%;
-    top: 95%;
-    justify-content: center;
-    align-items: center;    
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
 }
 
 .texto{
+    /*tentando centralizar a div*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
     color: white;
+    white-space: normal;
+    width: 60%;
+    text-align: center;
+    /* configs das letras*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    line-height: 120%;    
 }
+
+
     
 </style>
 
