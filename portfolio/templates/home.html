@@ -3,28 +3,27 @@
 
 
 <head> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
         
 </head>
+
 <body> 
-    <div class = "content" id= "content">
     <img src = "https://avatars.githubusercontent.com/u/107804156?s=400&u=43ec0835927f335d081becb95e548599eb0acb47&v=4">
 
     <p> Prazer, meu nome é Lucas. Atualmente tenho 19 anos e estou no quarto período da <br>faculdade de Engenharia de software da Unicatolica. Criei
     esse site com o intuito <br>de que as pessoas conheçam um pouco da minha jornada na área de programação</br> </br><p>
     </div>
 
-    <a id= "button-a" type="button" href= "https://github.com"  class="btn btn-light">Mais</a>
+    <a id= "button-a" type="button" href= "/materias"  class="btn btn-light">Materias</a>
 
     
 </body>
 
 <style type="text/css">
-    body{
-        background: black;
-        color: white;
-    }
+
+
+    
 
     img{
         border-radius: 100%;
@@ -38,25 +37,44 @@
     }
 
     p{
-        position: absolute;
-        display: absolute;
-        text-align: center;
-        justify-content: center;
-        top: 400px;
-        right: 10px; 
-        left: 0%;
-        
-
+        /*tentando centralizar a div*/
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    white-space: normal;
+    width: 60%;
+    text-align: center;
+    /* configs das letras*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    line-height: 120%;     
     }
 
     #button-a{
+        top: 70%;
+        left: 45%;
         position: absolute;
-        justify-content: center;
-        transform: translate(0%, 1070%);
-        right: 620px;
-        left: 620px;
-        top: 100px;
+        
+        
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 2%;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
     }
+
     
+    
+    #footer{
+        top:90%;
+        color: white;
+    }
 </style>
 {% endblock %}

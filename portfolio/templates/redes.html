@@ -8,7 +8,17 @@
 <body>
     <div class ="texto">
         <p>
-            
+            A proposta inicial dessa disciplina é entender todos os conceitos básicos de redes, algo muito importante na área de TI.
+
+            <p>Comunicação de dados é a troca de informações entre dispositivos por meio de um meio de transmissão. Ela envolve conceitos como <destaque>taxa de transmissão, largura de banda, atraso, ruído, erro, modulação, multiplexação e codificação.</destaque></p>
+            <p>Padrões e protocolos de comunicação são regras que definem como os dispositivos se comunicam. Eles especificam aspectos como formato, tamanho, ordem, sincronização, endereçamento e controle de erros das mensagens. Alguns exemplos são <destaque>Ethernet, Wi-Fi, TCP, IP, HTTP, FTP, SMTP e DNS.</destaque>
+            <p>Protocolos são conjuntos de regras que regulam a comunicação entre dispositivos em uma rede. Eles definem como os dados são formatados, transmitidos, recebidos e processados. Eles também estabelecem mecanismos de controle de fluxo, de congestionamento, de roteamento e de correção de erros. Os protocolos podem ser classificados em diferentes camadas, de acordo com a sua função e o nível de abstração.</p>
+            Classificação das redes é a forma de categorizar as redes de computadores de acordo com o seu tamanho, o seu alcance, a sua topologia, a sua arquitetura ou o seu propósito. Algumas formas de classificar as redes são: por tamanho (LAN, MAN, WAN, etc.), por alcance (global, regional, nacional, etc.), por topologia (estrela, anel, barramento, malha, etc.), por arquitetura (cliente-servidor, peer-to-peer, etc.) ou por propósito (pública, privada, corporativa, etc.).</p>
+            Topologias são as formas como os dispositivos são conectados em uma rede. Elas influenciam o desempenho, a confiabilidade, a escalabilidade e o custo das redes. As topologias mais comuns são: estrela, anel, barramento, malha, árvore e híbrida.
+            Padrões são documentos que especificam as características técnicas e operacionais de um sistema, produto ou serviço. Eles são definidos por organizações reconhecidas, como a <destaque>IEEE, a ISO, a IETF e a W3C</destaque>. Eles garantem a qualidade, a compatibilidade, a interoperabilidade e a segurança dos sistemas, produtos e serviços. Alguns exemplos de padrões são: <destaque>IEEE 802.3, IEEE 802.11, ISO/IEC 11801, IETF RFC 791, IETF RFC 793 e W3C HTML.</destaque>
+            <p>Modelos de referência são estruturas conceituais que descrevem as funções e as interações dos protocolos de comunicação em uma rede. Eles dividem os protocolos em camadas, de acordo com o nível de abstração e a função desempenhada. Eles facilitam o projeto, a implementação, o teste e a padronização dos protocolos. Os modelos de referência mais conhecidos são o OSI e o TCP/IP.</p>
+            <p>Sub-redes são divisões lógicas de uma rede, que permitem o uso mais eficiente dos endereços IP. Uma sub-rede é identificada por um endereço IP e uma máscara de sub-rede, que indica quais bits do endereço IP correspondem à rede e quais correspondem aos hosts. A divisão de uma rede em sub-redes traz vantagens como maior segurança, menor congestionamento, melhor gerenciamento e menor custo.</p>
+            Internet é uma rede global de redes, que interconecta bilhões de dispositivos por meio de protocolos padronizados, como o <destaque>IP, o TCP, o HTTP, o FTP, o SMTP e o DNS</destaque>. A internet tem uma arquitetura descentralizada, baseada em roteadores, e uma arquitetura hierárquica, baseada em provedores de serviço. A internet é composta por vários domínios, que são conjuntos de redes sob uma mesma administração ou autoridade. Os domínios podem ser classificados em domínios de nível superior (TLDs) e domínios de nível inferior (SLDs)
         </p>
     </div>
 </body>
@@ -36,18 +46,38 @@ body{
 #footer{
     color: white;
     position: absolute;
-    left:45%;
-    top: 95%;
+    left:40%;
+
+    top: 160%;
     justify-content: center;
     align-items: center;    
 }
 
 .texto{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
     color: white;
-    height: 50%;
-    width: 50%;
+    white-space: normal;
+    width: 60%;
+    text-align: center;
+    /* configs das letras*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    line-height: 120%;
 }
     
+destaque{
+    color: rgb(130, 130, 255);
+    font-weight: bold;
+}
+
 </style>                    
 
 {% endblock %} 

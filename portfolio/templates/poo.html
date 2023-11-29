@@ -1,7 +1,7 @@
 {% extends "base.html"  %} {% block title %} POO {% endblock %}
 {% block content %}
 <head>
-    <div class = "titulo">Programação orientada a objeto</div>
+    <div class = "titulo">Programação Orientada a Objeto</div>
     
 </head>
 
@@ -9,20 +9,48 @@
     <div class ="texto">
 
         <p>
-            Sobre Conceitos básicos de orientação a objeto, aprendi que é uma técnica de programação que permite modelar objetos do mundo real em um sistema de software. A Abstração é um dos pilares da POO e é utilizada para definir entidades do mundo real. Encapsulamento é a técnica utilizada para esconder uma ideia, ou seja, não expor detalhes internos para o usuário, tornando partes do sistema mais independentes possível. Herança é um conceito que permite criar uma nova classe a partir de uma classe existente. Polimorfismo é a capacidade de um objeto poder ser referenciado de várias formas.
+            Eu estudei vários conteúdos interessantes sobre programação orientada a objetos (POO) neste semestre. A seguir, vou resumir alguns deles.
         </p>
+        <p>POO é um paradigma de programação que trata os dados e as operações como objetos, que são entidades que possuem atributos e métodos. A POO serve para facilitar o desenvolvimento, a manutenção e a reutilização de software, pois permite abstrair, modularizar e organizar melhor o código.</p>
+        
+        <p>Abstração, polimorfismo, encapsulamento e herança são conceitos fundamentais da POO. Eles são:<br></br>
+            <destaque>Abstração:</destaque> é a capacidade de representar as características essenciais de uma entidade, ignorando os detalhes irrelevantes. A abstração permite simplificar e generalizar os problemas e as soluções.<br></br>
+            <destaque>Polimorfismo:</destaque> é a capacidade de assumir diferentes formas ou comportamentos, dependendo do contexto. O polimorfismo permite que um mesmo nome ou símbolo se refira a diferentes objetos ou métodos, que compartilham uma interface comum.<br></br>
+            <destaque>Encapsulamento:</destaque> é a capacidade de ocultar os detalhes internos de um objeto, expondo apenas os serviços que ele oferece. O encapsulamento permite proteger e controlar o acesso aos dados e aos métodos de um objeto, garantindo a sua integridade e a sua segurança.<br></br>
+            <destaque>Herança:</destaque> é a capacidade de criar novos objetos a partir de objetos existentes, aproveitando as suas características e os seus comportamentos. A herança permite estabelecer relações de especialização e generalização entre os objetos, evitando a repetição e a redundância de código.<br></br></p>
+    
+        <p>Para estudarmos os conceitos básicos de POO nesse semestre a linguagem utilizada foi Java, a seguir vou adentrar em alguns conceitos básicos e importantes da linguagem</p>
+            
+        <p><destaque>Variáveis:</destaque> em Java, as variáveis devem ser declaradas com um tipo e um nome, seguindo a sintaxe: tipo nome;. Por exemplo: int x;, String nome;, boolean ligado;, etc. As variáveis podem ser inicializadas com um valor, seguindo a sintaxe: tipo nome = valor;. Por exemplo: int x = 10;, String nome = "João";, boolean ligado = true;, etc. As variáveis podem ser modificadas com uma atribuição, seguindo a sintaxe: nome = valor;. Por exemplo: x = 20;, nome = "Maria";, ligado = false;, etc.</p>
+        
+        <p><destaque>Operadores:</destaque> em Java, os operadores são símbolos que realizam operações sobre os valores ou as variáveis. Os operadores podem ser classificados em aritméticos, relacionais, lógicos, etc. Os operadores aritméticos realizam operações matemáticas, como soma, subtração, multiplicação, divisão, etc. Por exemplo: x + y, x - y, x * y, x / y, etc. Os operadores relacionais realizam comparações entre os valores ou as variáveis, retornando um valor booleano. Por exemplo: x == y, x != y, x < y, x > y, etc. Os operadores lógicos realizam operações booleanas, como conjunção, disjunção, negação, etc. Por exemplo: x && y, x || y, !x, etc.</p>
 
-        <p>
-            Sobre Orientação a objetos em java, aprendi que é uma linguagem de programação orientada a objetos. Alguns dos métodos, condições, estruturas de repetição e operadores em java que aprendi são: <destaque > if, else, switch, while, do-while, for, break, continue, return, ==, !=, >, <, >=, <=, &&, ||, +, -, *, /, %, ++, --, +=, -=, *=, /=, %=.</destaque>
-        </p>
+        <p><destaque>Estruturas de condições:</destaque> em Java, as estruturas de condições são blocos de código que executam uma ação ou outra, dependendo de uma condição. As estruturas de condições mais comuns são o if e o switch. O if segue a sintaxe: if (condição) {ação1;} else {ação2;}. Por exemplo: if (x > y) {System.out.println("x é maior que y");} else {System.out.println("x é menor ou igual a y");}. O switch segue a sintaxe: switch (variável) {case valor1: ação1; break; case valor2: ação2; break; ... default: açãoN; break;}. Por exemplo: switch (dia) {case 1: System.out.println("Domingo"); break; case 2: System.out.println("Segunda"); break; ... default: System.out.println("Dia inválido"); break;}.</p>
 
-        <p>
-            Sobre criação de classes em java, aprendi que é possível criar novas classes em Java usando a palavra-chave class. Uma classe pode ter atributos (variáveis) e métodos (funções). Por exemplo, para criar uma classe Pessoa com os atributos nome e idade, pode-se usar a seguinte sintaxe:
-        </p>
+        <p><destaque>Estruturas de repetições:</destaque> em Java, as estruturas de repetições são blocos de código que executam uma ação repetidamente, enquanto uma condição for verdadeira. As estruturas de repetições mais comuns são o while, o do-while e o for. O while segue a sintaxe: while (condição) {ação;}. Por exemplo: while (x < 10) {System.out.println(x); x++;}. O do-while segue a sintaxe: do {ação;} while (condição);. Por exemplo: do {System.out.println(x); x++;} while (x < 10);. O for segue a sintaxe: for (inicialização; condição; incremento) {ação;}. Por exemplo: for (int i = 0; i < 10; i++) {System.out.println(i);}.</p>
 
-        <p>
-
-        </p>
+        <p><destaque>Métodos básicos em Java:</destaque> em Java, os métodos são declarados com um modificador de acesso, um tipo de retorno, um nome e uma lista de parâmetros, seguindo a sintaxe: modificador tipo nome (tipo1 parâmetro1, tipo2 parâmetro2, ...) {corpo;}. Por exemplo: public int soma (int x, int y) {return x + y;}. Os métodos podem ser chamados com um nome e uma lista de argumentos, seguindo a sintaxe: nome (argumento1, argumento2, ...);. Por exemplo: soma (10, 20);. Alguns métodos básicos em Java são:<br></br>
+           
+            <div class= "metodos">
+            <destaque>System.out.println(): imprime uma mensagem na tela, seguida de uma quebra de linha.<br></br></destaque>
+            <destaque>System.out.print(): imprime uma mensagem na tela, sem quebra de linha.<br></br></destaque>
+            <destaque>System.in.read(): lê um byte da entrada padrão.<br></br></destaque>
+            <destaque>Scanner sc = new Scanner(System.in): cria um objeto Scanner que pode ler dados da entrada padrão.<br></br></destaque>
+            <destaque>sc.nextInt(): lê um inteiro da entrada padrão.<br></br></destaque>
+            <destaque>sc.nextDouble(): lê um número real da entrada padrão.<br></br>
+            <destaque>sc.nextLine(): lê uma linha de texto da entrada padrão.<br></br></destaque>
+            <destaque>sc.close(): fecha o objeto Scanner.<br></br>
+            <destaque>Math.abs(): retorna o valor absoluto de um número.<br></br></destaque>
+            <destaque>Math.sqrt(): retorna a raiz quadrada de um número.Math.pow(): retorna a potência de um número elevado a outro.<br></br></destaque>
+            <destaque>Math.sin(): retorna o seno de um ângulo em radianos.<br></br></destaque>
+            <destaque>Math.cos(): retorna o cosseno de um ângulo em radianos.</destaque><br></br>
+            <destaque>Math.tan(): retorna a tangente de um ângulo em radianos.</destaque><br></br>
+            Math.PI: retorna o valor de pi.<br></br>
+            Math.E: retorna o valor de e.<br></br>
+            String s = new String(): cria um objeto String que armazena uma sequência de caracteres.<br></br>
+            s.length(): retorna o comprimento da string</p>
+            </div>
+    
     </div>
 </body>
 
@@ -33,8 +61,9 @@
     }
 
     .titulo{
-
-    font-size: 150%;
+    /* caracteristicas do titulo */
+    font-size: 200%;
+    font-weight: bold;
     color: white;
     display: flex;
 
@@ -52,7 +81,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh; /* Torna a página verticalmente centrada */
-    background-color: black;
+
 }
     
 destaque{
@@ -60,13 +89,14 @@ destaque{
     font-weight: bold;
 }
 
+
 #footer{
     color: white;
     
     
     /*centralizar a no topo da tela */
     position: absolute;
-    top: 100%;
+    top: 300%;
     left: 50%;
     transform: translate(-50%, -50%);
   
@@ -75,7 +105,7 @@ destaque{
 .texto{
     /*tentando centralizar a div*/
     position: absolute;
-    top: 50%;
+    top: 150%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -94,6 +124,10 @@ destaque{
 }
 
 
+.metodos{
+    line-height: 90%;
+    text-align: left;
+}
     
 </style>
 
